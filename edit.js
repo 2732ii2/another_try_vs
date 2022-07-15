@@ -1,7 +1,6 @@
 
-
-
+document.getElementById('ed').style.color="red";
 function ds()
 {
-    document.getElementById("bc").style.background="red";
+    document.getElementById('ed').style.color="orange";
 }
