@@ -197,77 +197,77 @@ font-family: 'Ibarra Real Nova', serif;
                         </button> </td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Faded <button id="click_me3" onclick="ds3()" class="material-symbols-outlined">
+                    <td><div class="thre"> Faded <button id="click_me3" onclick="ds3(), foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Kiss me<button id="click_me4" onclick="ds4()" class="material-symbols-outlined">
+                    <td><div class="thre"> Kiss me<button id="click_me4" onclick="ds4(), foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Lovers <button id="click_me5" onclick="ds5()" class="material-symbols-outlined">
+                    <td><div class="thre"> Lovers <button id="click_me5" onclick="ds5(), foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Cheap Thrills<button id="click_me6" onclick="ds6()" class="material-symbols-outlined">
+                    <td><div class="thre"> Cheap Thrills<button id="click_me6" onclick="ds6(), foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Tianium<button id="click_me7" onclick="ds7()" class="material-symbols-outlined">
+                    <td><div class="thre"> Tianium<button id="click_me7" onclick="ds7(), foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre">Rang Sarri chunariya re <button id="click_me8" onclick="ds8()"  class="material-symbols-outlined">
+                    <td><div class="thre">Rang Sarri chunariya re <button id="click_me8" onclick="ds8(), foreighteen()"  class="material-symbols-outlined">
                             play_circle
                         </button> </td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Mene Tujhe Dekha <button id="click_me9" onclick="ds9()" class="material-symbols-outlined">
+                    <td><div class="thre"> Mene Tujhe Dekha <button id="click_me9" onclick="ds9() ,foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Eleven <button  id="click_me10" onclick="ds10()" class="material-symbols-outlined">
+                    <td><div class="thre"> Eleven <button  id="click_me10" onclick="ds10(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button> </td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Twelve <button id="click_me11" onclick="ds11()" class="material-symbols-outlined">
+                    <td><div class="thre"> Twelve <button id="click_me11" onclick="ds11(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Thirteen <button id="click_me12" onclick="ds12()" class="material-symbols-outlined">
+                    <td><div class="thre"> Thirteen <button id="click_me12" onclick="ds12(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Fourteen <button id="click_me13" onclick="ds13()" class="material-symbols-outlined">
+                    <td><div class="thre"> Fourteen <button id="click_me13" onclick="ds13(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Fifteen<button id="click_me14" onclick="ds14()" class="material-symbols-outlined">
+                    <td><div class="thre"> Fifteen<button id="click_me14" onclick="ds14(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre">Sixteen<button id="click_me15" onclick="ds15()" class="material-symbols-outlined">
+                    <td><div class="thre">Sixteen<button id="click_me15" onclick="ds15(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre"> Seventeen <button id="click_me16" onclick="ds16()" class="material-symbols-outlined">
+                    <td><div class="thre"> Seventeen <button id="click_me16" onclick="ds16(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button> </td>
                 </tr>
                 <tr>
-                    <td><div class="thre">Eighteen <button id="click_me17" onclick="foreighteen()" class="material-symbols-outlined">
+                    <td><div class="thre">Eighteen <button id="click_me17" onclick="ds17(),foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button></td>
                 </tr>
@@ -551,47 +551,119 @@ font-family: 'Ibarra Real Nova', serif;
                     e.style.color = "	#696969";
                 }
             }
-            function foreighteen()
-            {
-                var arr=new Array;
-                for(let i=0;i<16;i++)
-                {
-                    var c="click_me"+i;
-                    arr.push(c);
-                    
+        function ds14() {
+                var a = document.getElementById('click_me14');
+
+
+                if (a.innerText == "play_circle") {
+                    a.innerText = "play_disabled";
+                    var d = document.getElementsByTagName('td')[14];
+
+                    d.style.borderBottom = "2px solid blue";
+                    var e = document.getElementsByClassName('thre')[14];
+                    e.style.color = "black";
                 }
-                var arr2=new Array;
-                var count = 0;
-                for(let j=0;j<arr.length;j++)
-                {
-                    var main_click=(arr[j]);
-                    // console.log(main_click);
-                    var d=document.getElementById(main_click);
-                    if (d.innerText=="play_disabled")
-                    {
-                        count+=1;
-                        console.log(true);
-                        var maind=(main_click);
-                        arr2.push(maind);
-                        console.log(maind);
-                    }
-                }
-                // if (count>1)
-                // {
-                //     alert("you can't play so many songs at the time");
-                //     // var ed=document.getElementById(maind);
-                //     // ed.innerText="play_circle";
-                // }
-                console.log(arr2);
-                if (arr2.length>1)
-                {
-                    var dm=(arr2[0]);
-                    var dmm=document.getElementById(dm);
-                    console.log(dmm);
-                    console.log(dmm.innerText);
-                    dmm.innerText="play_circle";
+                else {
+                    a.innerText = "play_circle";
+                    var d = document.getElementsByTagName('td')[14];
+                    d.style.background = "transparent";
+                    d.style.borderBottom = ".005px solid 	#0000FF";
+                    var e = document.getElementsByClassName('thre')[14];
+                    e.style.color = "	#696969";
                 }
             }
+            function ds15() {
+                    var a = document.getElementById('click_me15');
+
+
+                    if (a.innerText == "play_circle") {
+                        a.innerText = "play_disabled";
+                        var d = document.getElementsByTagName('td')[15];
+
+                        d.style.borderBottom = "2px solid blue";
+                        var e = document.getElementsByClassName('thre')[15];
+                        e.style.color = "black";
+                    }
+                    else {
+                        a.innerText = "play_circle";
+                        var d = document.getElementsByTagName('td')[15];
+                        d.style.background = "transparent";
+                        d.style.borderBottom = ".005px solid 	#0000FF";
+                        var e = document.getElementsByClassName('thre')[15];
+                        e.style.color = "	#696969";
+                    }
+                }
+        function ds16() {
+                var a = document.getElementById('click_me16');
+
+
+                if (a.innerText == "play_circle") {
+                    a.innerText = "play_disabled";
+                    var d = document.getElementsByTagName('td')[16];
+
+                    d.style.borderBottom = "2px solid blue";
+                    var e = document.getElementsByClassName('thre')[16];
+                    e.style.color = "black";
+                }
+                else {
+                    a.innerText = "play_circle";
+                    var d = document.getElementsByTagName('td')[16];
+                    d.style.background = "transparent";
+                    d.style.borderBottom = ".005px solid 	#0000FF";
+                    var e = document.getElementsByClassName('thre')[16];
+                    e.style.color = "	#696969";
+                }
+            }
+        function ds17() {
+                var a = document.getElementById('click_me17');
+
+
+                if (a.innerText == "play_circle") {
+                    a.innerText = "play_disabled";
+                    var d = document.getElementsByTagName('td')[17];
+
+                    d.style.borderBottom = "2px solid blue";
+                    var e = document.getElementsByClassName('thre')[17];
+                    e.style.color = "black";
+                }
+                else {
+                    a.innerText = "play_circle";
+                    var d = document.getElementsByTagName('td')[17];
+                    d.style.background = "transparent";
+                    d.style.borderBottom = ".005px solid 	#0000FF";
+                    var e = document.getElementsByClassName('thre')[17];
+                    e.style.color = "	#696969";
+                }
+            }
+        function foreighteen()
+        {
+            
+            
+            var arr = new Array;
+            for(let i=0;i<18;i++)
+            {
+                
+                c="click_me"+i;
+                var a=document.getElementById(c);
+                // console.log(a.innerHTML);
+                if (a.innerHTML == "play_disabled")
+                {
+                    
+                    console.log(c);
+                    arr.push(c);
+                    console.log(arr);
+                    if (arr.length>1)
+                    {
+                        var de=arr[0];
+                        var dee=document.getElementById(de);
+                        dee.innerText="play_circle";
+                    }
+                }
+                
+            }
+            
+            
+        }
     </script>
 </body>
 </html>
