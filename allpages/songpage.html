@@ -182,17 +182,17 @@ font-family: 'Ibarra Real Nova', serif;
         <div class="thirddiv">
             <table>
                 <tr >
-                    <td id="the" > <div class="thre"> Dil Diya Gala <button onclick="ds0()" id="click_me0" class="material-symbols-outlined">
+                    <td id="the" > <div class="thre"> Dil Diya Gala <button onclick="ds0() , foreighteen()" id="click_me0" class="material-symbols-outlined">
                         play_circle
                     </button>  </div> </td>
                 </tr>
                 <tr>
-                   <td><div class="thre">Tiger 3 - Song<button  id="click_me1" onclick="ds1()"  class="material-symbols-outlined">
+                   <td><div class="thre">Tiger 3 - Song<button  id="click_me1" onclick="ds1() , foreighteen()"  class="material-symbols-outlined">
                         play_circle
                     </button></td>
                 </tr>
                 <tr>
-                    <td><div class="thre">Don't let me down <button id="click_me2" onclick="ds2()" class="material-symbols-outlined">
+                    <td><div class="thre">Don't let me down <button id="click_me2" onclick="ds2() , foreighteen()" class="material-symbols-outlined">
                             play_circle
                         </button> </td>
                 </tr>
@@ -560,24 +560,36 @@ font-family: 'Ibarra Real Nova', serif;
                     arr.push(c);
                     
                 }
+                var arr2=new Array;
                 var count = 0;
                 for(let j=0;j<arr.length;j++)
                 {
                     var main_click=(arr[j]);
-                    
+                    // console.log(main_click);
                     var d=document.getElementById(main_click);
                     if (d.innerText=="play_disabled")
                     {
                         count+=1;
                         console.log(true);
                         var maind=(main_click);
+                        arr2.push(maind);
+                        console.log(maind);
                     }
                 }
-                if (count>1)
+                // if (count>1)
+                // {
+                //     alert("you can't play so many songs at the time");
+                //     // var ed=document.getElementById(maind);
+                //     // ed.innerText="play_circle";
+                // }
+                console.log(arr2);
+                if (arr2.length>1)
                 {
-                    alert("you can't play so many songs at the time");
-                    var ed=document.getElementById(maind);
-                    ed.innerText="play_circle";
+                    var dm=(arr2[0]);
+                    var dmm=document.getElementById(dm);
+                    console.log(dmm);
+                    console.log(dmm.innerText);
+                    dmm.innerText="play_circle";
                 }
             }
     </script>
