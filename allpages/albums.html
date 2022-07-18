@@ -17,7 +17,8 @@
         'GRAD' 0,
         'opsz' 48
         }
-        #greenbutton {
+        
+        #greenbutton1 {
             
             margin-top: 90%;
             margin-bottom: 5%;
@@ -559,7 +560,7 @@
             <audio id="audio_" src="../songs/Dil.mp3" controls ></audio>
             <div onmouseover="ds1()" onmouseout="de1()" id="d1" class="_1">
                 <div id="s1" class="two">
-                    <span id="greenbutton" onclick="playsong_1()" class="material-symbols-outlined">
+                    <span id="greenbutton1" onclick="playsong_1()" class="material-symbols-outlined">
                         play_arrow
 
                     </span>
@@ -571,32 +572,48 @@
                 
             </div>
             <div onmouseover="ds2()" onmouseout="de2()" id="d2" class="_2">
-                <div id="s2" class="two"></div>
-                
+                <div id="s2" class="two">
+                    <span id="greenbutton2" onclick="playsong_2()" class="material-symbols-outlined">
+                        play_arrow
+                    
+                    </span>
+                </div>
+
                 <h1 id="__s11"> Dil Song</h1>
                 <p id="__p11"> Release in 2022
                     <br> Villian 2
                 </p>
             </div>
             <div onmouseover="ds3()" onmouseout="de3()" id="d3" class="_3">
-                <div id="s3" class="two"></div>
-        
+                <div id="s3" class="two">
+                    <span id="greenbutton3" onclick="playsong_3()" class="material-symbols-outlined">
+                        play_arrow
+                    
+                    </span>
+                </div>
                 <h1 id="__s11"> Dil Song</h1>
                 <p id="__p11"> Release in 2022
                     <br> Villian 2
                 </p>
             </div>
             <div onmouseover="ds4()" onmouseout="de4()" id="d4"  class="_4">
-                <div id="s4"  class="two"></div>
-             
+                <div id="s4"  class="two">
+                    <span id="greenbutto42" onclick="playsong_4()" class="material-symbols-outlined">
+                        play_arrow
+                    </span>
+                </div>
                 <h1 id="__s11"> Dil Song</h1>
                 <p id="__p11"> Release in 2022
                     <br> Villian 2
                 </p>
             </div>
             <div onmouseover="ds5()" onmouseout="de5()" id="d5" class="_5">
-                <div id="s5" class="two"></div>
-               
+                <div id="s5" class="two">
+                    <span id="greenbutton5" onclick="playsong_5()" class="material-symbols-outlined">
+                        play_arrow
+                    
+                    </span>
+                </div>
                 <h1 id="__s11"> Dil Song</h1>
                 <p id="__p11"> Release in 2022
                     <br> Villian 2
@@ -749,7 +766,7 @@
             document.getElementById('d1').style.border="1px solid #808080";
             document.getElementById('d1').style.boxShadow="0px 3px 8px black";
             document.getElementById('s1').style.border="1px solid white";
-            document.getElementById('greenbutton').style.opacity=1;
+            document.getElementById('greenbutton1').style.opacity=1;
             
         }
         function de1()
@@ -757,48 +774,56 @@
             document.getElementById('d1').style.background= "linear-gradient(black,white)";
             document.getElementById('d1').style.border = "1px solid white";
             document.getElementById('d1').style.boxShadow = "0px 3px 8px black";
-            document.getElementById('greenbutton').style.opacity = 0;
+            document.getElementById('greenbutton1').style.opacity = 0;
             
         }
         function ds2() {
                 document.getElementById('d2').style.background = " linear-gradient(to bottom,blue,rgba(0,0,0,0.1))";
                 document.getElementById('d2').style.border = "1px solid #808080";
                 document.getElementById('d2').style.boxShadow = "0px 3px 8px white";
+                document.getElementById('greenbutton2').style.opacity = 1;
             }
             function de2() {
                 document.getElementById('d2').style.background = "linear-gradient(black,white)";
                 document.getElementById('d2').style.border = "1px solid white";
                 document.getElementById('d2').style.boxShadow = "0px 3px 8px black";
+                 document.getElementById('greenbutton2').style.opacity = 0;
             }
         function ds3() {
                 document.getElementById('d3').style.background = " linear-gradient(to bottom,blue,rgba(0,0,0,0.1))";
                 document.getElementById('d3').style.border = "1px solid #808080";
                 document.getElementById('d3').style.boxShadow = "0px 3px 8px white";
+                 document.getElementById('greenbutton3').style.opacity = 1;
             }
             function de3() {
                 document.getElementById('d3').style.background = "linear-gradient(black,white)";
                 document.getElementById('d3').style.border = "1px solid white";
                 document.getElementById('d3').style.boxShadow = "0px 3px 8px black";
+                 document.getElementById('greenbutton3').style.opacity = 0;
             }
         function ds4() {
                 document.getElementById('d4').style.background = " linear-gradient(to bottom,blue,rgba(0,0,0,0.1))";
                 document.getElementById('d4').style.border = "1px solid #808080";
                 document.getElementById('d4').style.boxShadow = "0px 3px 8px white";
+                 document.getElementById('greenbutton4').style.opacity = 1;
             }
             function de4() {
                 document.getElementById('d4').style.background = "linear-gradient(black,white)";
                 document.getElementById('d4').style.border = "1px solid white";
                 document.getElementById('d4').style.boxShadow = "0px 3px 8px black";
+                 document.getElementById('greenbutton4').style.opacity = 0;
             }
         function ds5() {
                 document.getElementById('d5').style.background = " linear-gradient(to bottom,blue,rgba(0,0,0,0.1))";
                 document.getElementById('d5').style.border = "1px solid #808080";
                 document.getElementById('d5').style.boxShadow = "0px 3px 8px white";
+                 document.getElementById('greenbutton5').style.opacity = 1;
             }
             function de5() {
                 document.getElementById('d5').style.background = "linear-gradient(black,white)";
                 document.getElementById('d5').style.border = "1px solid white";
                 document.getElementById('d5').style.boxShadow = "0px 3px 8px black";
+                 document.getElementById('greenbutton5').style.opacity = 0;
             }
         function ds6() {
                 document.getElementById('d6').style.background = " linear-gradient(to bottom,blue,rgba(0,0,0,0.1))";
@@ -887,7 +912,65 @@
                 a.pause();
             }
         }
+        function main()
+        {
+            var two_=document.getElementById('greenbutton2');
+            two_.style.marginTop="90%";
+            two_.style.marginBottom = "5%";
+            two_.style.marginRight = "5%";
+            two_.style.fontSize="60px";
+            two_.style.background="greenyellow";
+            two_.style.borderRadius="50%";
+            two_.style.opacity=0;
+            two_.style.color="black";
+            
+            //this is finish
+            var th_ = document.getElementById('greenbutton3');
+            th_.style.marginTop = "90%";
+            th_.style.marginBottom = "5%";
+            th_.style.marginRight = "5%";
+            th_.style.fontSize = "60px";
+            th_.style.background = "greenyellow";
+            th_.style.borderRadius = "50%";
+            th_.style.opacity = 0;
+            th_.style.color = "black";
 
+            //this is finish
+            var fo_ = document.getElementById('greenbutton4');
+            fo_.style.marginTop = "90%";
+            fo_.style.marginBottom = "5%";
+            fo_.style.marginRight = "5%";
+            fo_.style.fontSize = "60px";
+            fo_.style.background = "greenyellow";
+            fo_.style.borderRadius = "50%";
+            fo_.style.opacity = 0;
+            fo_.style.color = "black";
+
+            //this is finish
+            var fi_ = document.getElementById('greenbutton5');
+            fi_.style.marginTop = "90%";
+            fi_.style.marginBottom = "5%";
+            fi_.style.marginRight = "5%";
+            fi_.style.fontSize = "60px";
+            fi_.style.background = "greenyellow";
+            fi_.style.borderRadius = "50%";
+            fi_.style.opacity = 0;
+            fi_.style.color = "black";
+
+            //this is finish
+        }
+        main();
+        // #greenbutton1 {
+
+        //     margin - top: 90 %;
+        //     margin - bottom: 5 %;
+        //     margin - right: 5 %;
+        //     font - size: 60px;
+        //     background - color: greenyellow;
+        //     border - radius: 50 %;
+        //     opacity: 0;
+        //     color: black;
+        // }
     </script>
 </body>
 </html>
