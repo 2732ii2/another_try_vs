@@ -637,35 +637,35 @@ font-family: 'Ibarra Real Nova', serif;
                     e.style.color = "	#696969";
                 }
             }
-        function foreighteen()
-        {
-            
-            
-            var arr = new Array;
-            for(let i=0;i<18;i++)
-            {
-                
-                c="click_me"+i;
-                var a=document.getElementById(c);
-                // console.log(a.innerHTML);
-                if (a.innerHTML == "play_disabled")
-                {
-                    
-                    console.log(c);
-                    arr.push(c);
-                    console.log(arr);
-                    if (arr.length>1)
-                    {
-                        var de=arr[0];
-                        var dee=document.getElementById(de);
-                        dee.innerText="play_circle";
+        function foreighteen() {
+                var arr = new Array;
+                var song_arr = new Array;
+                for (let i = 0; i < 18; i++) {
+
+                    c = "click_me" + i;
+                    m = "music_" + i;
+                    var a = document.getElementById(c);
+                    var src0 = document.getElementById(m);
+                    // console.log(a.innerHTML);
+                    if (a.innerHTML == "play_disabled") {
+
+                        console.log(c);
+                        console.log(m);
+                        arr.push(c);
+                        song_arr.push(m);
+                        console.log(arr);
+                        if (arr.length > 1) {
+                            // we have here two songs src links
+                            var de = arr[0];
+                            var dee = document.getElementById(de);
+                            dee.innerText = "play_circle";
+                            var se = song_arr[0];
+                            var see = document.getElementById(se).pause();
+
+                        }
                     }
                 }
-                
             }
-            
-            
-        }
     </script>
 </body>
 </html>
