@@ -358,7 +358,7 @@ font-family: 'Ibarra Real Nova', serif;
                 <div class="player">
                     <div class="pl1"> <span id="ed" class="material-symbols-outlined">
                         headset_mic
-                    </span> &nbsp; &nbsp;<h1>Dil Ninja Songs</h1> </div>
+                    </span> &nbsp; &nbsp;<h1 id="song_head_change">Dil Ninja Songs</h1> </div>
                     <div class="pt">
                         <div class="pl2"> <button id="ee" onclick="make_backward()" class="material-symbols-outlined">
                                 fast_rewind
@@ -423,8 +423,18 @@ font-family: 'Ibarra Real Nova', serif;
                     else {
                         c.innerText = "play_arrow";
                     }
-                    
+                    trying_something();  
             }
+            function trying_something()
+            {
+                var c=document.getElementById("song_head_change");
+                console.log(c.innerText);
+                var d=document.getElementById('ad').src;
+                var song_name=(d).split("/");
+                c.innerText=(song_name[4]);
+
+            }
+            trying_something();
             function make_backward() {
 
                     console.log("clicked");
@@ -458,6 +468,7 @@ font-family: 'Ibarra Real Nova', serif;
                     else {
                         c.innerText = "play_arrow";
                     }
+                    trying_something();
 
                 }
 
@@ -485,6 +496,7 @@ font-family: 'Ibarra Real Nova', serif;
                     else {
                         c.innerText = "play_arrow";
                     }
+                    trying_something();
             }
 
     </script>
