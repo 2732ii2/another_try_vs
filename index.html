@@ -354,13 +354,13 @@ font-family: 'Ibarra Real Nova', serif;
             </div>
             <div class="fourthpart">
                 <div class="upper"></div>
-                <audio id="ad" src="./s4.mp3"  controls ></audio>
+                <audio id="ad" src="./songs/mannat.mp3"  controls ></audio>
                 <div class="player">
                     <div class="pl1"> <span id="ed" class="material-symbols-outlined">
                         headset_mic
                     </span> &nbsp; &nbsp;<h1>Dil Ninja Songs</h1> </div>
                     <div class="pt">
-                        <div class="pl2"> <button id="ee" class="material-symbols-outlined">
+                        <div class="pl2"> <button id="ee" onclick="make_backward()" class="material-symbols-outlined">
                                 fast_rewind
                         </button></div>
                         <div class="pl3"> <button onclick="ds()"  id="ee" class="material-symbols-outlined">
@@ -387,23 +387,84 @@ font-family: 'Ibarra Real Nova', serif;
                 a.style.height = "5%";
             }
 
-            function make_forward() {
+            function make_forward() 
+            {
+                    
                     console.log("clicked");
                     var a = document.getElementById('ad').src;
+                    console.log(a);
                     var d = a.split("/");
-                    var curr_song = (d[3]);
-                    var curr_pos = 0;
-                    var atcur_song;
+                    var main=("/"+d[3]+"/"+d[4]);
+                    console.log(main);
+                    var arr_songs=["/songs/cheap_thrills.mp3", "/songs/Dil.mp3", "/songs/Faded.mp3", "/songs/Kalandar.mp3", "/songs/mannat.mp3", "/songs/rangisari.mp3", "/songs/titanium.mp3", "/songs/s4.mp3"];
+                    for(let i=0;i<arr_songs.length;i++)
+                    {
+                        if(arr_songs[i]==main){
+                            console.log("true");
+                            cur_song=arr_songs[i];
+                            index=i;
+                            break;
+                        }
+                    }
+
+                    if (index>=arr_songs.length-1)
+                    {
+                        document.getElementById('ad').setAttribute("src", "/songs/cheap_thrills.mp3");
+                    }
+                    else{
+                        var change_song =  (arr_songs[index + 1]);
+                        document.getElementById('ad').setAttribute("src", change_song);
+                    }
+                    var c = document.getElementsByTagName('button')[1];
+                    if (c.innerText == "play_arrow") {
+                        console.log("yes it is true");
+                        c.innerText = "play_disabled";
+                    }
+                    else {
+                        c.innerText = "play_arrow";
+                    }
                     
-                    var arr_song = ["./songs/cheap_thrills.mp3", "./songs/Dil.mp3", "./songs/mannat.mp3"];
-                    
-                    
+            }
+            function make_backward() {
+
+                    console.log("clicked");
+                    var a = document.getElementById('ad').src;
+                    console.log(a);
+                    var d = a.split("/");
+                    var main = ("/" + d[3] + "/" + d[4]);
+                    console.log(main);
+                    var arr_songs = ["/songs/cheap_thrills.mp3", "/songs/Dil.mp3", "/songs/Faded.mp3", "/songs/Kalandar.mp3", "/songs/mannat.mp3", "/songs/rangisari.mp3", "/songs/titanium.mp3", "/songs/s4.mp3"];
+                    arr_songs.reverse();
+                    for (let i = 0; i < arr_songs.length; i++) {
+                        if (arr_songs[i] == main) {
+                            console.log("true");
+                            cur_song = arr_songs[i];
+                            index = i;
+                            break;
+                        }
+                    }
+                    if (index >= arr_songs.length - 1) {
+                        document.getElementById('ad').setAttribute("src", "/songs/s4.mp3");
+                    }
+                    else {
+                        var change_song = (arr_songs[index + 1]);
+                        document.getElementById('ad').setAttribute("src", change_song);
+                    }
+                    var c = document.getElementsByTagName('button')[1];
+                    if (c.innerText == "play_arrow") {
+                        console.log("yes it is true");
+                        c.innerText = "play_disabled";
+                    }
+                    else {
+                        c.innerText = "play_arrow";
+                    }
 
                 }
 
            
 
-            function ds() {
+            function ds() 
+            {
                     console.log('clicked!');
                     var a = document.getElementById('ad');
                     if (a.paused != true) {
@@ -424,7 +485,7 @@ font-family: 'Ibarra Real Nova', serif;
                     else {
                         c.innerText = "play_arrow";
                     }
-                }
+            }
 
     </script>
 </body>
