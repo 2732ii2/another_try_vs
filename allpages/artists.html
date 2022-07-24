@@ -62,7 +62,7 @@
             align-items: center;
             height: 60px;
             width: 100%;
-            border-bottom: 2px solid rgba(236, 231, 231, 0.8) ;
+            border-bottom: 2px solid rgb(11, 229, 245) ;
             margin-top: .5%;
             padding: 20px;
             background: rgba(236, 231, 231, 0.2);
@@ -70,8 +70,10 @@
     
         a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 22px;
             color: black;
+            text-shadow: 2px 2px 4px blue;
+            color:rgb(11, 229, 245);
             transition: all .5s ease-in-out;
         }
     
@@ -83,7 +85,9 @@
     
         .items {
             color: black;
-            font-size: 20px;
+            color: rgb(11, 229, 245);
+            text-shadow: 2px 2px 4px blue;
+            font-size: 22px;
             transition: all .5s ease-in-out;
         }
     
@@ -102,6 +106,53 @@
         #one:hover {
             font-size: 25px;
             border-bottom: 3px solid black;
+        }
+        .third_div{
+            width:98%;
+            height:510px;
+            background:linear-gradient(to top right,rgba(6, 6, 237, 0.5),rgba(42, 154, 233, 0.867),rgba(6, 6, 237, 0.5));
+            border: 1px solid rgb(11, 229, 245);
+            border-radius: 5px;
+            margin-top: 2%;
+            
+            transition: all .3s;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .third_div:hover{
+            transform: scale(1.009);
+            box-shadow: 0px 4px 15px blue;
+        }
+        .one_{
+            width: 200px;
+            height: 230px;
+            border:2px solid white;
+            margin: 10px;
+            border-radius: 5px;
+            transition: all .2s;
+        }
+        .one_:hover{
+            transform:translate(8px,-5px);
+            box-shadow: 0px 4px 8px white;
+        }
+        .first_mini{
+            width: 50%;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .second_mini
+        {
+            width:50%;
+            height: 100%;
+        }
+        #munavar{
+            background: url();
         }
     </style>
 </head>
@@ -128,6 +179,18 @@
                 <div class="items"><a href="../allpages/songpage.html">Songs</a></div>
                 <div class="items"><a href="../allpages/albums.html">Albums</a></div>
                 <div class="items">Artists</div>
+            </div>
+        </div>
+        <div class="third_div">
+            <div class="first_mini">
+                <div id="munavar" class="one_"></div>
+                <div id="arijit" class="one_"></div>
+                <div id="hollywood" class="one_"></div>
+                <div id="bollywood" class="one_"></div>
+                <div id="Romantic" class="one_"></div>
+            </div>
+            <div class="second_mini">
+
             </div>
         </div>
     </div>
