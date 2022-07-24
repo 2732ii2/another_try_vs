@@ -161,10 +161,15 @@
             width:48%;
             height: 95%;
             border: 1px solid white;
+            background: url(../image/background-2.jpeg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background: url(../image/background-2.jpeg);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
         }
         #munavar{
             background: url(../image/best_munawar.jpeg);
@@ -252,6 +257,52 @@
             letter-spacing: 3px;
             text-shadow: 2px 2px 4px black;
         }
+        #sh-1{
+            color:white;
+            font-family: 'Dancing Script', cursive;
+            font-size: 52px;
+            text-shadow: 2px 2px 4px black;
+            letter-spacing: 1px;
+            margin-top: 16px;
+              border-bottom: 4px solid black;
+        }
+        #sh-2{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            color:white;
+            font-size: 52px;
+            text-shadow: 2px 2px 4px black;
+            letter-spacing: 1px;
+            margin-top: 20px;
+          
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+        @media (max-width:1349px){
+            .one_{
+                width:150px;
+                height: 200px;
+            }
+        }
+        @media (max-width:1149px) {
+            .one_{
+                width:150px;
+                height: 150px;
+            }
+            #sh-2{
+                font-size: 42px;
+                border: none;
+            }
+            #sh-1{
+                font-size: 32px;
+                border: none;
+            }
+        }
+        /* @media (max-width:1149px) {
+            .one_{
+                width:150px;
+                height: 200px;
+            }
+        } */
     </style>
 </head>
 <body>
@@ -281,7 +332,7 @@
         </div>
         <div class="third_div">
             <div class="first_mini">
-                <div onmouseenter="im_come()" onmouseleave="im_gone()" id="munavar" class="one_">
+                <div onmouseenter="im_come()"  onmouseleave="im_gone()" id="munavar" class="one_">
                     <div id="game_1" class="game">
                         <h1 id="h_1" >Best of Munawar Songs</h1>
                     </div>
@@ -308,7 +359,8 @@
                 </div>
             </div>
             <div class="second_mini">
-
+                <p id="sh-2">Music is not a drug. It's an Addiction</p>
+                <h1 id="sh-1">Summer Music Festivals</h1>
             </div>
         </div>
     </div>
@@ -356,10 +408,17 @@
                 document.getElementById('h_5').style.opacity = 1;
                 document.getElementById('h_5').style.marginTop = "20%";
             }
-            function im_gone5() {
+        function im_gone5() {
                 document.getElementById('h_5').style.opacity = 0;
                 document.getElementById('game_5').style.height = "0%";
-            }
+        }
+        function tryer()
+        {
+            var a=document.getElementById('munavar');
+            a.addEventListener("click",function(){
+                alert("hello world!");
+            });
+        }
     </script>
     <script src="./vanilla-tilt.min.js"></script>
 </body>
