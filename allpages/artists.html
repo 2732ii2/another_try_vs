@@ -8,6 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ibarra+Real+Nova&display=swap');
     
@@ -18,7 +20,15 @@
             font-family: 'Dancing Script', cursive;
             font-family: 'Ibarra Real Nova', serif;
         }
-    
+
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+
         body {
             width: 100%;
             height: auto;
@@ -289,6 +299,23 @@
             transition: all .5s;
             
         }
+        
+        #td-1{
+            text-shadow: 2px 2px 4px white;
+        }
+        
+        #td-2{
+            text-shadow: 2px 2px 4px white;
+        }
+        #td-3{
+            text-shadow: 2px 2px 4px white;
+        }
+        #td-4{
+            text-shadow: 2px 2px 4px white;
+        }
+        #td-5{
+            text-shadow: 2px 2px 4px white;
+        }
         #ed_1:hover{
             font-size: 38px;
             text-shadow: 2px 2px 4px black;
@@ -346,6 +373,10 @@
             border-bottom: 2px solid black;
             box-shadow: 2px 2px 4px black;
             border-radius: 10px;
+            transition: all .2s;
+        }
+        td:hover{
+            transform: translateY(-10px);
         }
         #_last{
             border-bottom: none;
@@ -356,6 +387,175 @@
             display: flex;
             justify-content: space-between;
             
+        }
+        .animation_{
+            width: 20%;
+            height: 98%;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        #_11{
+            width:20px;
+            height: 20%;
+            border-radius: 5px;
+            background-color: red;
+            margin-right: 5px;
+            border: 1px solid red;
+            animation: game_1 1.5s ease-in infinite;
+        }
+        @keyframes game_1 {
+            0%{
+                height: 20%;
+            }
+            50%{
+                height: 90%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+        @keyframes game_2 {
+            0%{
+                height: 20%;
+            }
+            50%{
+                height: 90%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+        @keyframes game_3 {
+            0%{
+                height: 20%;
+            }
+            50%{
+                height: 90%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+        @keyframes game_4 {
+            0%{
+                height: 20%;
+            }
+            50%{
+                height: 90%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+        @keyframes game_5 {
+            0%{
+                height: 20%;
+            }
+            25%{
+                height: 50%;
+            }
+            50%{
+                height: 90%;
+            }
+            75%{
+                height: 50%;
+            }
+            100%{
+                height: 20%;
+            }
+        }
+        @keyframes game_6 {
+            0%{
+                height: 20%;
+            }
+            50%{
+                height: 50%;
+            }
+            100%{
+                height: 70%;
+            }
+        }
+        @keyframes game_7 {
+            0%{
+                height: 90%;
+            }
+            25%{
+                height: 70%;
+            }
+            50%{
+                height: 50%;
+            }
+            100%{
+                height: 20%;
+            }
+        }
+        #_12{
+            width:20px;
+            height: 80%;
+            background-color: green;
+            border-radius: 5px;
+             margin-right: 5px;
+            border: 1px solid green;
+            animation: game_2 1.5s ease-out infinite;
+        }
+        #_13{
+            width:20px;
+            height: 70%;
+            background-color:purple;
+             margin-right: 5px;
+            border-radius: 5px;
+            border: 1px solid purple;
+            animation: game_3 1.5s ease-in infinite;
+        }
+        #_14{
+            width:20px;
+            height: 60%;
+            background-color: black;
+            border-radius: 5px;
+             margin-right: 5px;
+            border: 1px solid black;
+            animation: game_4 1.5s ease-out infinite;
+        }
+        #_15{
+            width:20px;
+            height: 50%;
+            background-color: pink;
+             margin-right: 5px;
+             border-radius: 5px;
+            border: 1px solid pink;
+            animation: game_5 1.5s linear infinite;
+        }
+        #_16{
+            width:20px;
+            height: 70%;
+            background-color: orange;
+            animation: game_6 1.5s ease-in-out infinite;
+            border-radius: 5px;
+             margin-right: 5px;
+            border: 1px solid orange;
+        }
+        #_17{
+            width:20px;
+            background-color: white;
+            animation: game_7 1.5s ease-out infinite;
+            border-radius: 5px;
+            height: 90%;
+             margin-right: 5px;
+            border: 1px solid white;
+        }
+        #btn{
+            margin-right: 15px;
+            height: 80%;
+            margin-top: 5px;
+            font-size: 40px;
+            outline: none;
+            color: white;
+            border: 2px solid black;
+            border-radius: 4px;
+            background: black;
+
         }
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
@@ -466,7 +666,18 @@
                             <td>
                             <div class="somean">
                                 <h1 id="td-2">Nagpade ka Rider</h1>
-                                <audio src="../songs/nagpada.mp3 " controls></audio>
+                                <div class="animation_">
+                                    <div id="_11" class="one_1"></div>
+                                    <div id="_12" class="one_1"></div>
+                                    <div id="_13" class="one_1"></div>
+                                    <div id="_14" class="one_1"></div>
+                                    <div id="_15" class="one_1"></div>
+                                    <div id="_16" class="one_1"></div>
+                                    <div id="_17" class="one_1"></div>
+                                </div>
+                                <button  id="btn" class="material-symbols-outlined">
+                                    play_circle
+                                </button>
                             </div>
                             </td>
                         </tr>
@@ -579,6 +790,10 @@
             });
         }
         tryer();
+        
+             
+        
+        
     </script>
     <script src="./vanilla-tilt.min.js"></script>
 </body>
