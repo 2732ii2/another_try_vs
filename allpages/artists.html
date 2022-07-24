@@ -167,12 +167,65 @@
             background-size: cover;
 
         }
+        #arjit{
+            background: url(../image/arijit.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #bollywood{
+            background: url(../image/salman.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+             
+        }
+        #hollywood{
+            background: url(../image/Rock.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+             
+        }
         #h_1{
             display: flex;
             color:white;
-            font-size: 24px;
+            font-size: 26px;
             text-align: center;
             opacity: 0;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px black;
+        }
+        #h_4{
+            display: flex;
+            color:white;
+            font-size: 32px;
+            text-align: center;
+            opacity: 0;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px black;
+        }
+        #h_3{
+            display: flex;
+            color:white;
+            font-size: 32px;
+            text-align: center;
+            opacity: 0;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px black;
+        }
+        #h_2{
+            display: flex;
+            color:white;
+            font-size: 28px;
+            text-align: center;
+            opacity: 0;
+            text-transform: capitalize;
+            letter-spacing: 3px;
             text-shadow: 2px 2px 4px black;
         }
         
@@ -210,17 +263,23 @@
                         <h1 id="h_1" >Best of Munawar Songs</h1>
                     </div>
                 </div>
-                <div id="arijit" class="one_">
-                    <div class="game"></div>
+                <div onmouseenter="im_come2()" onmouseleave="im_gone2()" id="arjit" class="one_">
+                    <div id="game_2" class="game">
+                        <h1 id="h_2">Best of Arijit Songs <br> Songs</h1>
+                    </div>
                 </div>
-                <div id="hollywood" class="one_">
-                    <div class="game"></div>
+                <div onmouseenter="im_come3()" onmouseleave="im_gone3()" id="hollywood" class="one_">
+                    <div id="game_3" class="game">
+                        <h1 id="h_3">Hollywood <br> Songs</h1>
+                    </div>
                 </div>
-                <div id="bollywood" class="one_">
-                    <div class="game"></div>
+                <div  onmouseenter="im_come4()" onmouseleave="im_gone4()" id="bollywood" class="one_">
+                    <div id="game_4" class="game">
+                        <h1 id="h_4">Bollywood <br> Songs</h1>
+                    </div>
                 </div>
                 <div id="Romantic" class="one_">
-                    <div class="game"></div>
+                    <!-- <div class="game"></div> -->
                 </div>
             </div>
             <div class="second_mini">
@@ -239,6 +298,33 @@
         {
             document.getElementById('h_1').style.opacity = 0;
             document.getElementById('game_1').style.height = "0%";
+        }
+        function im_come2() {
+                document.getElementById('game_2').style.height = "100%";
+                document.getElementById('h_2').style.opacity = 1;
+                document.getElementById('h_2').style.marginTop = "20%";
+            }
+            function im_gone2() {
+                document.getElementById('h_2').style.opacity = 0;
+                document.getElementById('game_2').style.height = "0%";
+            }
+        function im_come3() {
+                document.getElementById('game_3').style.height = "100%";
+                document.getElementById('h_3').style.opacity = 1;
+                document.getElementById('h_3').style.marginTop = "20%";
+            }
+            function im_gone3() {
+                document.getElementById('h_3').style.opacity = 0;
+                document.getElementById('game_3').style.height = "0%";
+            }
+        function im_come4() {
+                document.getElementById('game_4').style.height = "100%";
+                document.getElementById('h_4').style.opacity = 1;
+                document.getElementById('h_4').style.marginTop = "20%";
+            }
+        function im_gone4() {
+                document.getElementById('h_4').style.opacity = 0;
+                document.getElementById('game_4').style.height = "0%";
         }
     </script>
 </body>
