@@ -263,6 +263,8 @@
             border: 1px solid black;
             padding: 5px;
             display: flex;
+            margin-top: 10px;
+            background:linear-gradient(to top left,rgba(6, 6, 239, 0.9),rgb(229, 213, 213),rgba(6, 6, 239, 0.9));
             justify-content: center;
             align-items: center;
         }
@@ -304,31 +306,50 @@
             font-size: 22px;
         }
         .end_sec{
-            width:98%;
-            height: 97%;
+            width:95%;
+            height: 90%;
+            background: transparent;
+            border-radius: 10px;
             padding: 5px;
             margin-top: 0%;
+            box-shadow: 4px 4px 8px black;
             border: 2px solid black;
         }
+        
         .endend{
             width:100%;
-            height:88%;
+            height:85%;
             margin-top: 2%;
             border:2px solid blue;
         }
         table{
             width: 100%;
             height: 100%;
-            padding: 5px;
+            padding: 0px;
+            
         }
+        
+        
         td{
+            margin-top:20px;
             width:100%;
-            padding:20px;
-            height: 50px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
             font-size: 20px;
             border-bottom: 2px solid black;
         }
-        
+        #_last{
+            border-bottom: none;
+        }
+        .somean{
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: black;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
         @media (max-width:1349px){
@@ -423,20 +444,41 @@
                 <div class="endend">
                     <table>
                         <tr>
-                            <td><h1 id="td-1">Songs-1</h1></td>
-                        </tr>
-                        <tr>
-                            <td><h1 id="td-2">Songs-2</h1></td>
-                        </tr>
-                        <tr>
-                            <td><h1 id="td-3">Songs-3</h1></td>
-                        </tr>
-                        <tr>
-                            <td><h1 id="td-4">Songs-4</h1></td>
+                            <td>
+                                <div class="somean">
+                                <h1 id="td-1">Khwahish Songs</h1>
+                                <audio src="../songs/"></audio>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>
-                                <h1 id="td-5">Songs-5</h1>
+                            <div class="somean">
+                                <h1 id="td-2">Nagpade ka Rider</h1>
+                                <audio src="../songs/nagpada.mp3 " controls></audio>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="somean">
+                                <h1 id="td-3">Kalandar</h1>
+                                <audio src="../songs/nagpada.mp3 " controls></audio>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="somean">
+                                <h1 id="td-4">Das Peti Dil done</h1>
+                             </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="_last">
+                               <div class="somean">
+                                <h1 id="td-5">Aazmahish</h1>
+                               </div>
                             </td>
                         </tr>
                     </table>
