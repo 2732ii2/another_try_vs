@@ -275,6 +275,22 @@
             margin-top: 16px;
               border-bottom: 4px solid black;
         }
+        #ed_1{
+            text-align: center;
+            font-size: 32px;
+            text-transform: capitalize;
+            background: rgb(34, 34, 205,.4);
+            border-bottom: 2px solid blue;
+            border-radius: 10px;
+            color:white;
+            padding: 5px;
+            transition: all .5s;
+            
+        }
+        #ed_1:hover{
+            font-size: 38px;
+            text-shadow: 2px 2px 4px black;
+        }
         #sh-2{
             font-family: 'Yanone Kaffeesatz', sans-serif;
             color:white;
@@ -284,10 +300,14 @@
             margin-top: 20px;
           
         }
+        #sp_1{
+            font-size: 22px;
+        }
         .end_sec{
             width:98%;
-            height: 90%;
-            margin-top: -2%;
+            height: 97%;
+            padding: 5px;
+            margin-top: 0%;
             border: 2px solid black;
         }
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -354,22 +374,22 @@
                 </div>
                 <div onmouseenter="im_come2()" onmouseleave="im_gone2()" id="arjit" class="one_">
                     <div id="game_2" class="game">
-                        <h1 id="h_2">Best of Arijit Songs <br> Songs</h1>
+                        <h1 id="h_2">Best of Arijit Songs</h1>
                     </div>
                 </div>
                 <div onmouseenter="im_come3()" onmouseleave="im_gone3()" id="hollywood" class="one_">
                     <div id="game_3" class="game">
-                        <h1 id="h_3">Hollywood <br> Songs</h1>
+                        <h1 id="h_3">Hollywood  Songs</h1>
                     </div>
                 </div>
                 <div  onmouseenter="im_come4()" onmouseleave="im_gone4()" id="bollywood" class="one_">
                     <div id="game_4" class="game">
-                        <h1 id="h_4">Bollywood <br> Songs</h1>
+                        <h1 id="h_4">Bollywood  Songs</h1>
                     </div>
                 </div>
                 <div onmouseenter="im_come5()" onmouseleave="im_gone5()" id="Romantic" class="one_">
                     <div id="game_5" class="game">
-                        <h1 id="h_5">Romantic <br> Songs</h1>
+                        <h1 id="h_5">Romantic  Songs</h1>
                     </div>
                 </div>
             </div>
@@ -380,7 +400,7 @@
         </div>
         <div class="forth_part">
             <div class="end_sec">
-                <h1 id="ed_1"></h1>
+                <h1 id="ed_1">The best Songs OF all time : <span id="sp_1">Click the images to get what you want</span></h1>
             </div>
         </div>
     </div>
@@ -436,7 +456,33 @@
         {
             var a=document.getElementById('game_1');
             a.addEventListener("click",function(){
-                alert("hello world!");
+                // alert("hello world!");
+                var c=document.getElementById('h_1').innerText;
+                document.getElementById('sp_1').innerText=c;
+            });
+             var b = document.getElementById('game_2');
+            b.addEventListener("click", function () {
+                // alert("hello world!");
+                var c = document.getElementById('h_2').innerText;
+                document.getElementById('sp_1').innerText = c;
+            });
+             var c = document.getElementById('game_3');
+            c.addEventListener("click", function () {
+                // alert("hello world!");
+                var c = document.getElementById('h_3').innerText;
+                document.getElementById('sp_1').innerText = c;
+            });
+             var d = document.getElementById('game_4');
+            d.addEventListener("click", function () {
+                // alert("hello world!");
+                var c = document.getElementById('h_4').innerText;
+                document.getElementById('sp_1').innerText = c;
+            });
+             var e = document.getElementById('game_5');
+            e.addEventListener("click", function () {
+                // alert("hello world!");
+                var c = document.getElementById('h_5').innerText;
+                document.getElementById('sp_1').innerText = c;
             });
         }
         tryer();
