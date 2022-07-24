@@ -166,7 +166,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 20px;
-            padding: 20px;
+            
             display: flex;
             flex-direction: column;
             justify-content: left;
@@ -320,7 +320,7 @@
             width:100%;
             height:85%;
             margin-top: 2%;
-            border:2px solid blue;
+            /* border:2px solid blue; */
         }
         table{
             width: 100%;
@@ -328,7 +328,12 @@
             padding: 0px;
             
         }
-        
+        .ty-1{
+            width:100%;
+            height: 100%;
+            padding: 20px;
+            background: rgb(9, 9, 236,.2);
+        }
         
         td{
             margin-top:20px;
@@ -339,6 +344,8 @@
             flex-direction: row;
             font-size: 20px;
             border-bottom: 2px solid black;
+            box-shadow: 2px 2px 4px black;
+            border-radius: 10px;
         }
         #_last{
             border-bottom: none;
@@ -348,7 +355,7 @@
             height: 100%;
             display: flex;
             justify-content: space-between;
-            background: black;
+            
         }
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
@@ -434,8 +441,10 @@
                 </div>
             </div>
             <div class="second_mini">
-                <p id="sh-2">Music is not a drug. It's an Addiction</p>
-                <h1 id="sh-1">Summer Music Festivals</h1>
+                <div class="ty-1">
+                    <p id="sh-2">Music is not a drug. It's an Addiction</p>
+                    <h1 id="sh-1">Summer Music Festivals</h1>
+                </div>
             </div>
         </div>
         <div class="forth_part">
@@ -447,7 +456,9 @@
                             <td>
                                 <div class="somean">
                                 <h1 id="td-1">Khwahish Songs</h1>
-                                <audio src="../songs/"></audio>
+                                <div class="buttons_">
+                                    
+                                </div>
                                 </div>
                             </td>
                         </tr>
