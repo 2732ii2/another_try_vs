@@ -32,6 +32,7 @@
         body {
             width: 100%;
             height: auto;
+            
             background: rgba(236, 231, 231, 0.2);
         }
     
@@ -140,6 +141,7 @@
             height: 230px;
             border:2px solid white;
             margin: 10px;
+            cursor: pointer;
             border-radius: 5px;
             transition: all .5s;
         }
@@ -150,6 +152,7 @@
             border-bottom: 2px solid blue;
             justify-content: center;
             align-items: center;
+
             background: rgba(81, 156, 248, 0.30);
             transition: all .5s;
         }
@@ -866,8 +869,52 @@
         tryer();
         function checker_12()
         {
-            var a=document.getElementById("sp_1").innerText;
-            if(a==)
+            var a = document.getElementById('game_1');
+            a.addEventListener("click", function () {
+                console.log(a);
+                document.getElementById("td-1").innerText = "Khwahish";
+                document.getElementById("td-2").innerText = "Nagpade ka Rider";
+                document.getElementById("td-3").innerText = "Kalandar";
+                document.getElementById("td-4").innerText = "Das peti dil done";
+                document.getElementById("td-5").innerText = "Aazmahish";
+                
+            });
+            var b = document.getElementById('game_2');
+            b.addEventListener("click", function () {
+                // console.log(a);
+                document.getElementById("td-1").innerText="Tu hi ashiqi";
+                document.getElementById("td-2").innerText = "ijazat";
+                document.getElementById("td-3").innerText = "Dekh lena";
+                document.getElementById("td-4").innerText = "Naina";
+                document.getElementById("td-5").innerText = "Musafir";
+            });
+            var c = document.getElementById('game_3');
+            c.addEventListener("click", function () {
+                // console.log(a);
+                document.getElementById("td-1").innerText = "Positions";
+                document.getElementById("td-2").innerText = "Closer";
+                document.getElementById("td-3").innerText = "Despacito";
+                document.getElementById("td-4").innerText = "Love me like you do";
+                document.getElementById("td-5").innerText = "Yummy";
+            });
+            var d = document.getElementById('game_4');
+            d.addEventListener("click", function () {
+                // console.log(a);
+                document.getElementById("td-1").innerText = "Lapata";
+                document.getElementById("td-2").innerText = "Dil";
+                document.getElementById("td-3").innerText = "Tu ake dekh le";
+                document.getElementById("td-4").innerText = "Akh lad jave";
+                document.getElementById("td-5").innerText = "Laboko labo pe";
+            });
+            var e = document.getElementById('game_5');
+            e.addEventListener("click", function () {
+                // console.log(a);
+                document.getElementById("td-1").innerText = "Hale dil tujko Sunata";
+                document.getElementById("td-2").innerText = "Tu hi haqeekat";
+                document.getElementById("td-3").innerText = "Dil Ibadat";
+                document.getElementById("td-4").innerText = "Haan tu hai";
+                document.getElementById("td-5").innerText = "Mahi Mahi";
+            });
         }
         checker_12();
              
